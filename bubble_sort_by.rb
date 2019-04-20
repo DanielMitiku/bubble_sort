@@ -4,7 +4,7 @@ def bubble_sort_by(arr)
   while swap == true
     swap = false
     for i in (0...l - 1)
-      comp = yield(arr[i],arr[i + 1])
+      comp = yield(arr[i], arr[i + 1])
       if comp > 0
         temp = arr[i]
         arr[i] = arr[i + 1]
@@ -19,4 +19,4 @@ end
 answer = bubble_sort_by(["hi", "hello", "hey"]) do |left, right|
   left.length - right.length
 end
-puts answer 
+puts answer

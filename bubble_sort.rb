@@ -7,6 +7,7 @@ def bubble_sort(arr)
       if l == length - 1
         break
       end
+      
       if arr[l] > arr[l + 1]
         temp = arr[l]
         arr[l] = arr[l + 1]
