@@ -4,10 +4,7 @@ def bubble_sort(arr)
   while loop
     loop = false
     length.times do |l|
-      if l == length - 1
-        break
-      end
-      
+      next if l == length - 1
       if arr[l] > arr[l + 1]
         temp = arr[l]
         arr[l] = arr[l + 1]

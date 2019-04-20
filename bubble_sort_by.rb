@@ -3,7 +3,7 @@ def bubble_sort_by(arr)
   swap = true
   while swap == true
     swap = false
-    for i in (0...l - 1)
+    (l - 1).times do |i|
       comp = yield(arr[i], arr[i + 1])
       if comp > 0
         temp = arr[i]
@@ -13,7 +13,7 @@ def bubble_sort_by(arr)
       end
     end
   end
-  a
+  arr
 end
 
 answer = bubble_sort_by(["hi", "hello", "hey"]) do |left, right|
