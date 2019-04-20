@@ -1,20 +1,20 @@
-def bubble_sort a
+def bubble_sort(arr)
   loop = true
-  length = a.length
+  length = arr.length
   while loop
     loop = false
-    length.times { |l|
-      if l == length-1
-        break;
+    length.times do |l|
+      if l == length - 1
+        break
       end
-      if a[l] > a[l+1]
-        temp = a[l]
-        a[l] = a[l+1]
-        a[l+1] = temp
+      if arr[l] > arr[l + 1]
+        temp = arr[l]
+        arr[l] = arr[l + 1]
+        arr[l + 1] = temp
         loop = true
       end
-    }
+    end
   end
-  return a
+  arr
 end
-bubble_sort([4,3,78,2,0,2])
+bubble_sort([4, 3, 78, 2, 0, 2])
