@@ -6,9 +6,7 @@ def bubble_sort_by(arr)
     (l - 1).times do |i|
       comp = yield(arr[i], arr[i + 1])
       if comp > 0
-        temp = arr[i]
-        arr[i] = arr[i + 1]
-        arr[i + 1] = temp
+        arr[i],arr[i+1] = arr[i+1],arr[i]
         swap = true
       end
     end
